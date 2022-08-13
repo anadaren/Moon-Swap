@@ -12,14 +12,14 @@ function StartState:init()
 
     --the different colors for rotating title text
     self.colors = {
-        [1] = {217/255, 87/255, 99/255, 1},
-        [2] = {95/255, 205/255, 228/255, 1},
-        [3] = {251/255, 242/255, 54/255, 1},
-        [4] = {118/255, 66/255, 138/255, 1},
-        [5] = {153/255, 229/255, 80/255, 1},
-        [6] = {223/255, 113/255, 38/255, 1},
-        [7] = {223/255, 113/255, 38/255, 1},
-        [8] = {223/255, 113/255, 38/255, 1}
+        [1] = {200/255, 200/255, 200/255, 1},
+        [2] = {175/255, 175/255, 175/255, 1},
+        [3] = {150/255, 150/255, 150/255, 1},
+        [4] = {125/255, 125/255, 125/255, 1},
+        [5] = {100/255, 100/255, 100/255, 1},
+        [6] = {75/255, 75/255, 75/255, 1},
+        [7] = {50/255, 50/255, 50/255, 1},
+        [8] = {25/255, 25/255, 25/255, 1}
     }
 
     --placing the letters of the title text, with a position relative to the center
@@ -163,9 +163,9 @@ function StartState:drawOptions(y)
     self:drawTextShadow('Start', VIRTUAL_HEIGHT / 2 + y + 8)
 
     if self.currentMenuItem == 1 then
-        love.graphics.setColor(99/255, 155/255, 1, 1)
+        love.graphics.setColor(125/255, 125/255, 125/255, 1)
     else
-        love.graphics.setColor(48/255, 96/255, 1, 1)
+        love.graphics.setColor(75/255, 75/255, 75/255, 1)
     end
 
     love.graphics.printf('Start', 0, VIRTUAL_HEIGHT / 2 + y + 8, VIRTUAL_WIDTH, 'center')
@@ -175,9 +175,9 @@ function StartState:drawOptions(y)
     self:drawTextShadow('Quit', VIRTUAL_HEIGHT / 2 + y + 33)
 
     if self.currentMenuItem == 2 then
-        love.graphics.setColor(99/255, 155/255, 1, 1)
+        love.graphics.setColor(125/255, 125/255, 125/255, 1)
     else
-        love.graphics.setColor(48/255, 96/255, 1, 1)
+        love.graphics.setColor(75/255, 75/255, 75/255, 1)
     end
 
     love.graphics.printf('Quit', 0, VIRTUAL_HEIGHT / 2 + y + 33, VIRTUAL_WIDTH, 'center')
